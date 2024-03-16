@@ -1,0 +1,55 @@
+.container {
+    width: 1260px;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+.section {
+    width: 380px;
+    float: left;
+    margin: 40px 60px 0 0;
+}
+
+
+.details {
+    height: 100px;
+    margin-left: 10px;
+
+}
+
+.header,
+.section-header,
+.section-details,
+button,h3 {
+    margin-left: 10px;
+}
+
+button {
+    background-color: orange;
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    font-size: 15px;
+
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 15px;
+
+}
+
+.p-accordion{
+    border: 1px solid black;
+   
+}
+
+.section-1{
+    border: 1px solid red;
+}
+
+

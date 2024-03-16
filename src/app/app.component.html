@@ -1,0 +1,63 @@
+
+<!-- <div class="container">
+ <div class="row">
+  <div class="col-sm-6 section-two">
+  
+    <p-accordion>
+      <p-accordionTab *ngFor="let section of sections">
+        
+        <ng-template pTemplate="header">
+         {{ section.header }}
+        </ng-template>
+        {{ section.details }}
+      </p-accordionTab>
+    </p-accordion>
+  </div>
+
+
+    <div class="col-sm-6 ">
+      <h3>Add Section</h3>
+      <div class="section-form ml-4">
+        <label for="sectionHeader" class="section-header">Section Header: </label>
+        <input type="text" id="sectionHeader" class="header" #sectionHeaderInput><br>
+        <br>
+        <label for="sectionDetails" class="section-details">Section Details: </label>
+        <input type="text" id="sectionDetails" class="details" #sectionDetailsInput><br>
+        <br>
+        <button (click)="addSection(sectionHeaderInput.value, sectionDetailsInput.value)">Add</button>
+      </div>
+    </div>
+  </div>
+  </div>  -->
+
+
+  
+
+  <div class="container">
+   
+    <div class="row">
+      <div class="col-sm-6 section ">
+        <div class="section-form ml-4">
+          <h3 >Add Section</h3>
+          <label for="sectionHeader" class="section-header">Section Header: </label>
+          <input type="text" id="sectionHeader" class="header" #sectionHeaderInput><br>
+          <br>
+          <label for="sectionDetails" class="section-details">Section Details: </label>
+          <input type="text" id="sectionDetails" class="details" #sectionDetailsInput><br>
+          <br>
+          <button (click)="addSection(sectionHeaderInput.value, sectionDetailsInput.value)">Add</button>
+        </div>
+      </div>
+      <div class="col-sm-6 section p-accordion">
+        <p-accordion >
+          <p-accordionTab *ngFor="let section of sections" >
+            
+            <ng-template pTemplate="header">
+             {{ section.header }}
+            </ng-template>
+            {{ section.details }}
+          </p-accordionTab>
+        </p-accordion>
+      </div>
+    </div>
+  </div>
